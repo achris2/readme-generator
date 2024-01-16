@@ -1,7 +1,7 @@
 // generate license badge 
 function generateLicense(license) {
   if (license !== "none"){
-    return `![License](https://img.shields.io/badge/license-${license}-blue.svg)`
+    return `![License](https://img.shields.io/badge/license-${license}-blue.svg)`;
   } else {
     return ""; 
   }
@@ -27,11 +27,11 @@ function generateMarkdown(answers) {
   ## Description 
   ${answers.description}
 
-  ##Installation
+  ## Installation
   ${answers.installation}
 
   ## Usage
-  ${answers.description}
+  ${answers.usage}
 
   ## License
   This project is licensed under ${answers.license}
@@ -43,7 +43,7 @@ function generateMarkdown(answers) {
   ${answers.tests}
 
   ## Questions
-  If you have any questions, please feel free to reach out on my GitHub [github/${answers.github}](https://github.com/${answers.github}) or email me by [here](mailto:${answers.email}?subject=${answers.title})
+  If you have any questions, please feel free to reach out on my GitHub [github/${answers.github}](https://github.com/${answers.github}) or email me by clicking [here.](mailto:${answers.email})
 
 `;
 }
